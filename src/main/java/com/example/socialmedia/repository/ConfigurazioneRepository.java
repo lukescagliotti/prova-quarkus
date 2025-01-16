@@ -16,14 +16,22 @@ public class ConfigurazioneRepository {
 
     public Map<String, String> getConfigurationsByGroupId(Integer groupId) {
         List<Object[]> results = em.createQuery(
-            "SELECT c.descrizione, c.valore FROM configurazione c WHERE c.gruppo = :groupId", Object[].class)
-            .setParameter("groupId", groupId)
-            .getResultList();
-
+                "SELECT c.descrizione, c.valore FROM Configurazione c WHERE c.gruppo = :groupId", Object[].class)
+                .setParameter("groupId", groupId)
+                .getResultList();
+    
         return results.stream()
                       .collect(Collectors.toMap(
                           row -> (String) row[0], // descrizione
                           row -> (String) row[1]  // valore
                       ));
+    }
+
+    public Integer findIdByValore(String valore) {
+        return em.createQuery("SELECT c.id FROM Configurazione c WHERE c.valore = :valore", Integer.class)
+                .setParameter("valore", valore)
+                .getResultStream()
+                .findFirst()
+                .orElse(null);
     }
 }

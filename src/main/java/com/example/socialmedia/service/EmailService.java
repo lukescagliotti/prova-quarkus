@@ -24,7 +24,8 @@ public class EmailService {
 
     public void sendEmail(String recipient, String subject, String body) throws MessagingException {
         // Recupero configurazioni dal database
-        Integer groupId = 1; // ID del gruppo 'Invio email'
+        String configurazioneValore = "Configurazione invio email";
+        Integer groupId = configurazioneRepository.findIdByValore(configurazioneValore); // ID del gruppo 'Invio email'
         Map<String, String> configurations = configurazioneRepository.getConfigurationsByGroupId(groupId);
 
         System.out.println("Configurazioni recuperate:");

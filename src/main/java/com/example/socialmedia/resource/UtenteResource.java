@@ -55,7 +55,6 @@ public class UtenteResource {
                            .entity("Utente creato con ID: " + utente.id)
                            .build();
         } catch (Exception e) {
-            e.printStackTrace();
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                            .entity("Errore durante la creazione dell'utente.")
                            .build();

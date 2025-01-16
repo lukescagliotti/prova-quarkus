@@ -4,6 +4,7 @@ import com.example.socialmedia.dto.EmailRequest;
 import com.example.socialmedia.service.EmailService;
 
 import jakarta.inject.Inject;
+import jakarta.mail.MessagingException;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
@@ -31,8 +32,7 @@ public class EmailResource {
             emailService.sendEmail(recipient, subject, body);
 
             return Response.ok("Email inviata con successo!").build();
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (MessagingException e) {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
                            .entity("Errore durante l'invio dell'email.")
                            .build();
