@@ -41,13 +41,25 @@ public class UtenteResource {
     @POST
     @Transactional
     public Response createUtente(Utente utente) {
-        if (utente.username == null || utente.email == null || utente.password == null) {
-            return Response.status(Response.Status.BAD_REQUEST)
-                           .entity("Username, email e password sono obbligatori.")
+        try {
+            utente.id = null;
+            
+            if (utente.username == null || utente.email == null || utente.password == null) {
+                return Response.status(Response.Status.BAD_REQUEST)
+                               .entity("Username, email e password sono obbligatori.")
+                               .build();
+            }
+            
+            utente.persist();
+            return Response.status(Response.Status.CREATED)
+                           .entity("Utente creato con ID: " + utente.id)
+                           .build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                           .entity("Errore durante la creazione dell'utente.")
                            .build();
         }
-        utente.persist(); 
-        return Response.status(Response.Status.CREATED).entity(utente).build();
     }
 
     @PUT
