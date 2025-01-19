@@ -375,10 +375,10 @@ COPY public.post (id, utente_id, contenuto, data_creazione, data_modifica) FROM 
 --
 
 COPY public.utenti (id, username, email, password, data_creazione, data_modifica) FROM stdin;
-1	user1	user1@example.com	password1	2025-01-13 10:09:24.922377	2025-01-13 10:09:24.922377
-2	user2	user2@example.com	password2	2025-01-13 10:09:24.922377	2025-01-13 10:09:24.922377
-3	user3	user3@example.com	password3	2025-01-13 10:09:24.922377	2025-01-13 10:09:24.922377
-51	string	string	string	2025-01-15 14:29:43.290088	2025-01-15 14:29:43.290104
+1	user1	user1@example.com	password1	2025-01-01 10:09:24.922377	2025-01-01 10:09:24.922377
+2	user2	user2@example.com	password2	2025-01-01 10:09:24.922377	2025-01-01 10:09:24.922377
+3	user3	user3@example.com	password3	2025-01-01 10:09:24.922377	2025-01-01 10:09:24.922377
+51	string	string	string	2025-01-15 23:29:43.290088	2025-01-15 23:29:43.290104
 \.
 
 
