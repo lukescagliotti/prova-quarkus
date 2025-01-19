@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: commenti; Type: TABLE; Schema: public; Owner: luca
+-- Name: commenti; Type: TABLE; Schema: public; Owner: user
 --
 
 CREATE TABLE public.commenti (
@@ -34,10 +34,10 @@ CREATE TABLE public.commenti (
 );
 
 
-ALTER TABLE public.commenti OWNER TO luca;
+ALTER TABLE public.commenti OWNER TO user;
 
 --
--- Name: commenti_id_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: commenti_id_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.commenti_id_seq
@@ -49,17 +49,17 @@ CREATE SEQUENCE public.commenti_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.commenti_id_seq OWNER TO luca;
+ALTER TABLE public.commenti_id_seq OWNER TO user;
 
 --
--- Name: commenti_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: luca
+-- Name: commenti_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: user
 --
 
 ALTER SEQUENCE public.commenti_id_seq OWNED BY public.commenti.id;
 
 
 --
--- Name: configurazione; Type: TABLE; Schema: public; Owner: luca
+-- Name: configurazione; Type: TABLE; Schema: public; Owner: user
 --
 
 CREATE TABLE public.configurazione (
@@ -70,10 +70,10 @@ CREATE TABLE public.configurazione (
 );
 
 
-ALTER TABLE public.configurazione OWNER TO luca;
+ALTER TABLE public.configurazione OWNER TO user;
 
 --
--- Name: configurazione_id_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: configurazione_id_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.configurazione_id_seq
@@ -85,17 +85,17 @@ CREATE SEQUENCE public.configurazione_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.configurazione_id_seq OWNER TO luca;
+ALTER TABLE public.configurazione_id_seq OWNER TO user;
 
 --
--- Name: configurazione_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: luca
+-- Name: configurazione_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: user
 --
 
 ALTER SEQUENCE public.configurazione_id_seq OWNED BY public.configurazione.id;
 
 
 --
--- Name: dms; Type: TABLE; Schema: public; Owner: luca
+-- Name: dms; Type: TABLE; Schema: public; Owner: user
 --
 
 CREATE TABLE public.dms (
@@ -107,10 +107,10 @@ CREATE TABLE public.dms (
 );
 
 
-ALTER TABLE public.dms OWNER TO luca;
+ALTER TABLE public.dms OWNER TO user;
 
 --
--- Name: dms_id_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: dms_id_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.dms_id_seq
@@ -122,17 +122,17 @@ CREATE SEQUENCE public.dms_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.dms_id_seq OWNER TO luca;
+ALTER TABLE public.dms_id_seq OWNER TO user;
 
 --
--- Name: dms_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: luca
+-- Name: dms_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: user
 --
 
 ALTER SEQUENCE public.dms_id_seq OWNED BY public.dms.id;
 
 
 --
--- Name: likes; Type: TABLE; Schema: public; Owner: luca
+-- Name: likes; Type: TABLE; Schema: public; Owner: user
 --
 
 CREATE TABLE public.likes (
@@ -143,10 +143,10 @@ CREATE TABLE public.likes (
 );
 
 
-ALTER TABLE public.likes OWNER TO luca;
+ALTER TABLE public.likes OWNER TO user;
 
 --
--- Name: likes_id_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: likes_id_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.likes_id_seq
@@ -158,17 +158,17 @@ CREATE SEQUENCE public.likes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.likes_id_seq OWNER TO luca;
+ALTER TABLE public.likes_id_seq OWNER TO user;
 
 --
--- Name: likes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: luca
+-- Name: likes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: user
 --
 
 ALTER SEQUENCE public.likes_id_seq OWNED BY public.likes.id;
 
 
 --
--- Name: post; Type: TABLE; Schema: public; Owner: luca
+-- Name: post; Type: TABLE; Schema: public; Owner: user
 --
 
 CREATE TABLE public.post (
@@ -180,10 +180,10 @@ CREATE TABLE public.post (
 );
 
 
-ALTER TABLE public.post OWNER TO luca;
+ALTER TABLE public.post OWNER TO user;
 
 --
--- Name: post_id_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: post_id_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.post_id_seq
@@ -195,17 +195,17 @@ CREATE SEQUENCE public.post_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.post_id_seq OWNER TO luca;
+ALTER TABLE public.post_id_seq OWNER TO user;
 
 --
--- Name: post_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: luca
+-- Name: post_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: user
 --
 
 ALTER SEQUENCE public.post_id_seq OWNED BY public.post.id;
 
 
 --
--- Name: utente_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: utente_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.utente_seq
@@ -216,10 +216,10 @@ CREATE SEQUENCE public.utente_seq
     CACHE 1;
 
 
-ALTER TABLE public.utente_seq OWNER TO luca;
+ALTER TABLE public.utente_seq OWNER TO user;
 
 --
--- Name: utenti; Type: TABLE; Schema: public; Owner: luca
+-- Name: utenti; Type: TABLE; Schema: public; Owner: user
 --
 
 CREATE TABLE public.utenti (
@@ -232,10 +232,10 @@ CREATE TABLE public.utenti (
 );
 
 
-ALTER TABLE public.utenti OWNER TO luca;
+ALTER TABLE public.utenti OWNER TO user;
 
 --
--- Name: utenti_id_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: utenti_id_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.utenti_id_seq
@@ -247,17 +247,17 @@ CREATE SEQUENCE public.utenti_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.utenti_id_seq OWNER TO luca;
+ALTER TABLE public.utenti_id_seq OWNER TO user;
 
 --
--- Name: utenti_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: luca
+-- Name: utenti_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: user
 --
 
 ALTER SEQUENCE public.utenti_id_seq OWNED BY public.utenti.id;
 
 
 --
--- Name: utenti_seq; Type: SEQUENCE; Schema: public; Owner: luca
+-- Name: utenti_seq; Type: SEQUENCE; Schema: public; Owner: user
 --
 
 CREATE SEQUENCE public.utenti_seq
@@ -268,52 +268,52 @@ CREATE SEQUENCE public.utenti_seq
     CACHE 1;
 
 
-ALTER TABLE public.utenti_seq OWNER TO luca;
+ALTER TABLE public.utenti_seq OWNER TO user;
 
 --
--- Name: commenti id; Type: DEFAULT; Schema: public; Owner: luca
+-- Name: commenti id; Type: DEFAULT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.commenti ALTER COLUMN id SET DEFAULT nextval('public.commenti_id_seq'::regclass);
 
 
 --
--- Name: configurazione id; Type: DEFAULT; Schema: public; Owner: luca
+-- Name: configurazione id; Type: DEFAULT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.configurazione ALTER COLUMN id SET DEFAULT nextval('public.configurazione_id_seq'::regclass);
 
 
 --
--- Name: dms id; Type: DEFAULT; Schema: public; Owner: luca
+-- Name: dms id; Type: DEFAULT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.dms ALTER COLUMN id SET DEFAULT nextval('public.dms_id_seq'::regclass);
 
 
 --
--- Name: likes id; Type: DEFAULT; Schema: public; Owner: luca
+-- Name: likes id; Type: DEFAULT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.likes ALTER COLUMN id SET DEFAULT nextval('public.likes_id_seq'::regclass);
 
 
 --
--- Name: post id; Type: DEFAULT; Schema: public; Owner: luca
+-- Name: post id; Type: DEFAULT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.post ALTER COLUMN id SET DEFAULT nextval('public.post_id_seq'::regclass);
 
 
 --
--- Name: utenti id; Type: DEFAULT; Schema: public; Owner: luca
+-- Name: utenti id; Type: DEFAULT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.utenti ALTER COLUMN id SET DEFAULT nextval('public.utenti_id_seq'::regclass);
 
 
 --
--- Data for Name: commenti; Type: TABLE DATA; Schema: public; Owner: luca
+-- Data for Name: commenti; Type: TABLE DATA; Schema: public; Owner: user
 --
 
 COPY public.commenti (id, post_id, utente_id, contenuto, data_creazione, data_modifica) FROM stdin;
@@ -323,7 +323,7 @@ COPY public.commenti (id, post_id, utente_id, contenuto, data_creazione, data_mo
 
 
 --
--- Data for Name: configurazione; Type: TABLE DATA; Schema: public; Owner: luca
+-- Data for Name: configurazione; Type: TABLE DATA; Schema: public; Owner: user
 --
 
 COPY public.configurazione (id, valore, descrizione, gruppo) FROM stdin;
@@ -333,13 +333,13 @@ COPY public.configurazione (id, valore, descrizione, gruppo) FROM stdin;
 6	true	smtpAuth	1
 7	true	smtpStarttlsEnable	1
 8	true	smtpSslTrust	1
-2	luca.prova.dev@gmail.com	sender	1
+2	user.prova.dev@gmail.com	sender	1
 1	Configurazione invio email	\N	\N
 \.
 
 
 --
--- Data for Name: dms; Type: TABLE DATA; Schema: public; Owner: luca
+-- Data for Name: dms; Type: TABLE DATA; Schema: public; Owner: user
 --
 
 COPY public.dms (id, mittente_id, destinatario_id, messaggio, data_creazione) FROM stdin;
@@ -349,7 +349,7 @@ COPY public.dms (id, mittente_id, destinatario_id, messaggio, data_creazione) FR
 
 
 --
--- Data for Name: likes; Type: TABLE DATA; Schema: public; Owner: luca
+-- Data for Name: likes; Type: TABLE DATA; Schema: public; Owner: user
 --
 
 COPY public.likes (id, utente_id, post_id, data_creazione) FROM stdin;
@@ -360,7 +360,7 @@ COPY public.likes (id, utente_id, post_id, data_creazione) FROM stdin;
 
 
 --
--- Data for Name: post; Type: TABLE DATA; Schema: public; Owner: luca
+-- Data for Name: post; Type: TABLE DATA; Schema: public; Owner: user
 --
 
 COPY public.post (id, utente_id, contenuto, data_creazione, data_modifica) FROM stdin;
@@ -371,7 +371,7 @@ COPY public.post (id, utente_id, contenuto, data_creazione, data_modifica) FROM 
 
 
 --
--- Data for Name: utenti; Type: TABLE DATA; Schema: public; Owner: luca
+-- Data for Name: utenti; Type: TABLE DATA; Schema: public; Owner: user
 --
 
 COPY public.utenti (id, username, email, password, data_creazione, data_modifica) FROM stdin;
@@ -383,63 +383,63 @@ COPY public.utenti (id, username, email, password, data_creazione, data_modifica
 
 
 --
--- Name: commenti_id_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: commenti_id_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.commenti_id_seq', 2, true);
 
 
 --
--- Name: configurazione_id_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: configurazione_id_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.configurazione_id_seq', 1, false);
 
 
 --
--- Name: dms_id_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: dms_id_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.dms_id_seq', 2, true);
 
 
 --
--- Name: likes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: likes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.likes_id_seq', 3, true);
 
 
 --
--- Name: post_id_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: post_id_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.post_id_seq', 3, true);
 
 
 --
--- Name: utente_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: utente_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.utente_seq', 1, false);
 
 
 --
--- Name: utenti_id_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: utenti_id_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.utenti_id_seq', 3, true);
 
 
 --
--- Name: utenti_seq; Type: SEQUENCE SET; Schema: public; Owner: luca
+-- Name: utenti_seq; Type: SEQUENCE SET; Schema: public; Owner: user
 --
 
 SELECT pg_catalog.setval('public.utenti_seq', 51, true);
 
 
 --
--- Name: commenti commenti_pkey; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: commenti commenti_pkey; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.commenti
@@ -447,7 +447,7 @@ ALTER TABLE ONLY public.commenti
 
 
 --
--- Name: configurazione configurazione_pkey; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: configurazione configurazione_pkey; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.configurazione
@@ -455,7 +455,7 @@ ALTER TABLE ONLY public.configurazione
 
 
 --
--- Name: dms dms_pkey; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: dms dms_pkey; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.dms
@@ -463,7 +463,7 @@ ALTER TABLE ONLY public.dms
 
 
 --
--- Name: likes likes_pkey; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: likes likes_pkey; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.likes
@@ -471,7 +471,7 @@ ALTER TABLE ONLY public.likes
 
 
 --
--- Name: likes likes_utente_id_post_id_key; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: likes likes_utente_id_post_id_key; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.likes
@@ -479,7 +479,7 @@ ALTER TABLE ONLY public.likes
 
 
 --
--- Name: post post_pkey; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: post post_pkey; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.post
@@ -487,7 +487,7 @@ ALTER TABLE ONLY public.post
 
 
 --
--- Name: utenti utenti_email_key; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: utenti utenti_email_key; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.utenti
@@ -495,7 +495,7 @@ ALTER TABLE ONLY public.utenti
 
 
 --
--- Name: utenti utenti_pkey; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: utenti utenti_pkey; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.utenti
@@ -503,7 +503,7 @@ ALTER TABLE ONLY public.utenti
 
 
 --
--- Name: utenti utenti_username_key; Type: CONSTRAINT; Schema: public; Owner: luca
+-- Name: utenti utenti_username_key; Type: CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.utenti
@@ -511,7 +511,7 @@ ALTER TABLE ONLY public.utenti
 
 
 --
--- Name: commenti commenti_post_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: commenti commenti_post_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.commenti
@@ -519,7 +519,7 @@ ALTER TABLE ONLY public.commenti
 
 
 --
--- Name: commenti commenti_utente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: commenti commenti_utente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.commenti
@@ -527,7 +527,7 @@ ALTER TABLE ONLY public.commenti
 
 
 --
--- Name: dms dms_destinatario_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: dms dms_destinatario_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.dms
@@ -535,7 +535,7 @@ ALTER TABLE ONLY public.dms
 
 
 --
--- Name: dms dms_mittente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: dms dms_mittente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.dms
@@ -543,7 +543,7 @@ ALTER TABLE ONLY public.dms
 
 
 --
--- Name: likes likes_post_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: likes likes_post_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.likes
@@ -551,7 +551,7 @@ ALTER TABLE ONLY public.likes
 
 
 --
--- Name: likes likes_utente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: likes likes_utente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: user
 --
 
 ALTER TABLE ONLY public.likes
@@ -559,7 +559,7 @@ ALTER TABLE ONLY public.likes
 
 
 --
--- Name: post post_utente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: luca
+-- Name: post post_utente_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: useruser
 --
 
 ALTER TABLE ONLY public.post
