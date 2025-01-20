@@ -7,13 +7,13 @@ services:
       dockerfile: Dockerfile
     container_name: postgres-container
     ports:
-      - "5400:5400"
+      - "5400:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./db_backup.sql:/docker-entrypoint-initdb.d/db_backup.sql
     environment:
+      POSTGRES_DB: provaJava
       POSTGRES_USER: user
       POSTGRES_PASSWORD: pass
-      POSTGRES_DB: provaJava
 
 volumes:
   postgres_data:
